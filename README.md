@@ -10,50 +10,64 @@ This repository contains the code and resources for an API blog post created usi
 
 ## Installation
 
-To get started with this project, follow the steps below:
-
 1. Clone the repository:
 
-```bash
-git clone https://github.com/lonebhen/Blog-API
+`git clone https://github.com/lonebhen/Blog-API
+
+2. Navigate to the project directory:
+
+`cd blog-api`
+
+3. Create a virtual environment:
+
+`virtualenv venv`
 
 
-cd blog-api
+4. Activate the virtual environment:
 
-Set up a virtual environment (optional but recommended):
+   On Linux or Mac:
 
-python3 -m venv venv
-source venv/bin/activate
+`source env/bin/activate`
+
+
+   On Windows:
+
+`venv/scripts/activate`
 
 Install the required dependencies:
 
-pip install -r requirements.txt
+5. Install the dependencies:
 
-Run database migrations:
+`pip install -r requirements.txt`
 
-python manage.py makemigrations
-python manage.py migrate
+6. Run migrations:
 
-Usage
+`python manage.py makemigrations`
+`python manage.py migrate`
+
+
+
+## Usage
 Once the installation is complete, you can start the development server using the following command:
 
-python manage.py runserver
-Access the API at http://localhost:8000/. You can now interact with the API using your preferred tool, such as cURL, Insomia or Postman.
+`python manage.py runserver`
+Access the API at http://localhost:8000/. 
+You can now interact with the API using your preferred tool, such as cURL, Insomia or Postman.
 
 
 
-API Endpoints
+## API Endpoints
 The API provides the following endpoints:
 
-/auth/signup/: (POST) - Signup user
-/auth/login/: (POST) - Login user
+- /auth/signup/: (POST) - Signup user
+- /auth/login/: (POST) - Login user
 
 
 
 
-/blog/posts/: (GET, POST) - Get all posts or create a new post.
-/blog/posts/{id}/: (GET, PUT, PATCH, DELETE) - Retrieve, update, or delete a specific post.
-/blog/public/: (GETT) - Get all posts for the public
+- /blog/posts/: (GET, POST) - Get all posts or create a new post.
+- /blog/posts/{id}/: (GET, PUT, PATCH, DELETE) - Retrieve, update, or delete a specific post.
+- /blog/public/: (GETT) - Get all posts for the public
 
 
 
