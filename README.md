@@ -61,13 +61,14 @@ The API provides the following endpoints:
 
 - /auth/signup/: (POST) - Signup user
 - /auth/login/: (POST) - Login user
-
-
-
-
 - /blog/posts/: (GET, POST) - Get all posts or create a new post.(Authors)
 - /blog/posts/{id}/: (GET, PUT, PATCH, DELETE) - Retrieve, update, or delete a specific post.(Auhors)
-- /blog/public/: (GETT) - Get all posts for the public.(Public)
+- /blog/public/: (GET) - Get all posts for the public.(Public)
+
+
+- /docs/: (GET) - API Documenation
+- /redoc/: (GET) - API Documenation
+
 
 
 
