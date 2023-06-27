@@ -70,5 +70,13 @@ The API provides the following endpoints:
 - /redoc/: (GET) - API Documenation
 
 
+## Authentication
+
+The API uses token based authentication. To get access to  protected endpoints, you need to include the token in the request header.
+The token is created when the user signs up and return in the response when the user logs in.
+
+`Authorization: Token <token>`
+
+
 
 
